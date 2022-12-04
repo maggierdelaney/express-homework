@@ -10,7 +10,7 @@ if (window.location.pathname === '/notes') {
   saveNoteBtn = document.querySelector('.save-note');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
-}
+};
 
 // Show an element
 const show = (elem) => {
@@ -163,7 +163,7 @@ const renderNoteList = async (notes) => {
     li.dataset.note = JSON.stringify(note);
 
     noteListItems.push(li);
-  });
+  }); 
 
   if (window.location.pathname === '/notes') {
     noteListItems.forEach((note) => noteList[0].append(note));
