@@ -1,68 +1,72 @@
-# 11 Express.js: Note Taker
+# Express: Note-Taker
 
-## Your Task
+## Description
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+Github Repo: https://github.com/maggierdelaney/express-homework
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+This homework assignment required the following acceptance criteria:
+- GIVEN a note-taking application, WHEN I open the Note Taker, THEN I am presented with a landing page with a link to a notes page
+    - Upon opening the index.html to http://localhost:3001, you will arrive to a landing home page with a button for "Getting Started"
 
+- WHEN I click on the link to the notes page, THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+    - Upon clicking "Getting started" you will be taken to the notes pages with pre-populated notes on the left, and an empty note on the right to make a new note
 
-## User Story
+- WHEN I enter a new note title and the note’s text, THEN a Save icon appears in the navigation at the top of the page
+    - After you tpye some text into the body of the note, the save button will apear
 
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
+- WHEN I click on the Save icon, THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+    - Once the save icon is clicked, you will see your new note populate on the bottom left-hand side at the bottom of the list
 
+- WHEN I click on an existing note in the list in the left-hand column, THEN that note appears in the right-hand column
+    - Not completed
 
-## Acceptance Criteria
-
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
+- WHEN I click on the Write icon in the navigation at the top of the page, THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+    - Not completed
 
 
-## Mock-Up
+## Table of Contents
 
-The following images show the web application's appearance and functionality:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+## Installation
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+1. Starter code was provided for this assignment to give the front end design and functionality, for this assignment the backend was created using express. Npm and express were installed.
 
+2. First a server.js file was created to establish the html routes for the home page and notes page.
 
-## Getting Started
+3. An index.js file was created to establish the api route, and then the apiRoute.js created the endpoint.
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+## Usage
 
-The following HTML routes should be created:
+1. Run the server.js to be taken to http://localhost:3001
 
-* `GET /notes` should return the `notes.html` file.
+2. Click on "Getting started"
 
-* `GET *` should return the `index.html` file.
+![home](/images/home.png)
 
-The following API routes should be created:
+3. Now you will see the notes page where there are pre-populated notes on the left, and empty space for a new note on the right.
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+![notes](/images/notes.png)
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+4. Type in your note, and click the "save" icon that populates. Your note will appear on the left hand side!
 
+![type note](/images/type-note.png)
+![save note](/images/save-note.png)
 
-## Bonus
+## Credits
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+Nodejs npm
+Express
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+## License
+
+Distributed under the MIT License.
+
+## Badges
+
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)

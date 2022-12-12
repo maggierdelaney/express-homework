@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "title": "Test Title",
+        "text": "Test text",
+        "note_id": "1"
+    },
+    {
+        "title": "Laundry",
+        "text": "Iron all professional clothes",
+        "note_id": "2"
+    },
+    {
+        "title": "House",
+        "text": "Need to sweep and mop",
+        "note_id": "3"
+    },
+    {
+        "title": "Homework",
+        "text": "Need to finish express module",
+        "note_id": "4"
+    },
+    {
+        "title": "lkjgdfa",
+        "text": "adfhdafagas",
+        "note_id": "6e953ce9-7ed7-4c0a-81c5-370567fcf07a"
+    },
+    {
+        "title": "hello world",
+        "text": "hello world",
+        "note_id": "5b373312-0976-4727-8e2e-c970dea396b4"
+    },
+    {
+        "title": "hello world again",
+        "text": "hello world again\n",
+        "note_id": "7f01f345-fa9d-476a-b036-076968fcbed5"
+    },
+    {
+        "title": "hello hello world again",
+        "text": "hello hello hello world again",
+        "note_id": "da7240ab-2435-41cc-9ea6-e01220d46e19"
+    }
+]
